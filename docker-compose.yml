@@ -8,5 +8,6 @@ services:
       - "4201:4201"
       - "4200:4200"
     container_name: psirs-frontend-env
-    volumes: 
-      - ./projectmarsfrontend:/usr/src/app/projectmarsfrontend  
+    volumes:
+       - ./projectmarsfrontend:/usr/src/app/projectmarsfrontend
+       - /usr/src/app/projectmarsfrontend/node_modules
